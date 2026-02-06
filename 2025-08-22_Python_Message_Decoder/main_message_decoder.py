@@ -25,7 +25,7 @@ def decoded_letter(alphabet: str, letter:str, shift: int) -> str:
     return letter_decoded
 
 
-def decode(message: str, shift: int) -> None:
+def decode(message: str, shift: int) -> str:
     decoded_message = ""
 
     for char in message:
