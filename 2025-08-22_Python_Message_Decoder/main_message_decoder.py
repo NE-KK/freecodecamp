@@ -20,9 +20,6 @@ def decoded_letter(alphabet: str, letter:str, shift: int) -> str:
     
     decoded_letter_index %= 26
 
-    #if decoded_letter_index > 25:
-    #    decoded_letter_index -= 26
-
     letter_decoded = alphabet[decoded_letter_index]
     return letter_decoded
 
@@ -40,6 +37,7 @@ def decode(message: str, shift: int) -> str:
 
     return decoded_message
 
-
+"""
 print(decode("Byffi Qilfx!", 20))      # Hello Woorld!
 print(decode("Zqd xnt njzx?", -1))     # Are you okay?
+"""
