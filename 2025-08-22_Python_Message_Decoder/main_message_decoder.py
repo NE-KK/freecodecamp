@@ -1,3 +1,8 @@
+# freecodecamp
+# Daily Coding Challenges
+# Day 12 (2025-08-22)
+# Message Decoder
+
 import string
 
 """
