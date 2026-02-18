@@ -26,8 +26,6 @@ def burn_candles(candles: int, leftovers_needed: int) -> int:
     leftovers_remains = 0
 
     while candles > 0:
-        
-
         new_candles = (candles + leftovers_remains) // leftovers_needed
         leftovers_remains = (candles + leftovers_remains) % leftovers_needed
         
