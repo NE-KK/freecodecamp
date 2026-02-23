@@ -1,6 +1,6 @@
 # freecodecamp
 # Daily Coding Challenges
-# Day 30 (2025-08-30)
+# Day 20 (2025-08-30)
 # Duplicates Array
 
 """
