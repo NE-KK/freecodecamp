@@ -13,7 +13,6 @@ The input strings will contain no punctuation, and will be entirely lowercase.
 
 def jbelmu(text):
     text_list = text.split()
-    new_text_list = []
     new_text = ''
 
     for word in text_list:
