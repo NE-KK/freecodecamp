@@ -1,6 +1,6 @@
 # freecodecamp
 # Daily Coding Challenges
-# Day 20 (2025-08-31)
+# Day 21 (2025-08-31)
 # Hex Generator
 
 """
@@ -12,7 +12,6 @@ The function should return a random six-character hex color code where the input
 """
 from random import randint
 
-# print(randint(0, 9))
 
 def add_color():
     color = ""
@@ -38,8 +37,3 @@ def generate_hex(color):
         color = "Invalid color" 
 
     return color
-
-print(generate_hex('red'))
-print(generate_hex('green'))
-print(generate_hex('blue'))
-print(generate_hex('yellow'))
