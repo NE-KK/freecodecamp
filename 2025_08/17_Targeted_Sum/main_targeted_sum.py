@@ -11,9 +11,6 @@ The returned array should have the indices in ascending order.
 """
 
 def find_target(arr: list, target: int):
-    # result = "Target not found"
-    # result = []
-
     for i in range(len(arr)):     
         for j in range(i + 1 , len(arr)):
             if arr[i] + arr[j] == target:
