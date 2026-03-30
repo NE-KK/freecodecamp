@@ -15,7 +15,6 @@ Duplicate prices should be ignored.
 """
 
 def get_laptop_cost(laptops: int, budget: int) -> int:
-    found = False
     price_my_laptop = 0
     price = max(laptops)
     laptops.remove(price)
@@ -23,7 +22,6 @@ def get_laptop_cost(laptops: int, budget: int) -> int:
     for _ in range(len(laptops)):
         price = max(laptops)
         if price < budget:
-            found = True
             price_my_laptop = price
         else:
             laptops.remove(price)
