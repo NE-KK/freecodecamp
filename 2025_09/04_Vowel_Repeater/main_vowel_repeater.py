@@ -14,4 +14,22 @@ The third vowel should appear three times in a row, and so on.
 - All non-vowel characters should keep their original case.
 """
 
-vowel_counter: int = 0
+vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+
+def repeat_vowels(text):
+    vowel_text = ""
+    vowel_counter: int = 0
+    
+    for letter in text:
+        if letter in vowels:
+            vowel_text += letter + (letter.lower() * vowel_counter)
+            vowel_counter += 1
+        else:
+            vowel_text += letter
+   
+    return vowel_text
+
+print(repeat_vowels("hello world"))
+"helloo wooorld"
+print(repeat_vowels("AEIOU"))
+"AEeIiiOoooUuuuu"
