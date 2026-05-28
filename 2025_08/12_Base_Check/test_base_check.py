@@ -17,97 +17,97 @@ Example of valid digits for bases:
 
 if __name__ == "__main__":
     # Test 1
-    if main_base_check.is_valid_number("10101", 2) == True:
+    if main_base_check.is_valid_number("10101", 2):
         print("Test 01: PASSED")
     else:
         print("Test 01: FAILED")       
     
     # Test 2
-    if main_base_check.is_valid_number("10201", 2) == False:
+    if not main_base_check.is_valid_number("10201", 2):
         print("Test 02: PASSED")
     else:
         print("Test 02: FAILED")       
     
     # Test 3
-    if main_base_check.is_valid_number("76543210", 8) == True:
+    if main_base_check.is_valid_number("76543210", 8):
         print("Test 03: PASSED")
     else:
         print("Test 03: FAILED")   
 
     # Test 4
-    if main_base_check.is_valid_number("9876543210", 8) == False:
+    if not main_base_check.is_valid_number("9876543210", 8):
         print("Test 04: PASSED")
     else:
         print("Test 04: FAILED")   
 
     # Test 5
-    if main_base_check.is_valid_number("9876543210", 10) == True:
+    if main_base_check.is_valid_number("9876543210", 10):
         print("Test 05: PASSED")
     else:
         print("Test 05: FAILED")
 
     # Test 6
-    if main_base_check.is_valid_number("ABC", 10) == False:
+    if not main_base_check.is_valid_number("ABC", 10):
         print("Test 06: PASSED")
     else:
         print("Test 06: FAILED")
 
     # Test 7
-    if main_base_check.is_valid_number("ABC", 16) == True:
+    if main_base_check.is_valid_number("ABC", 16):
         print("Test 07: PASSED")
     else:
         print("Test 07: FAILED")
 
     # Test 8
-    if main_base_check.is_valid_number("Z", 36) == True:
+    if main_base_check.is_valid_number("Z", 36):
         print("Test 08: PASSED")
     else:
         print("Test 08: FAILED")
 
     # Test 9
-    if main_base_check.is_valid_number("ABC", 20) == True:
+    if main_base_check.is_valid_number("ABC", 20):
         print("Test 09: PASSED")
     else:
         print("Test 09: FAILED")
 
     # Test 10
-    if main_base_check.is_valid_number("4B4BA9", 16) == True:
+    if main_base_check.is_valid_number("4B4BA9", 16):
         print("Test 10: PASSED")
     else:
         print("Test 10: FAILED")
 
     # Test 11
-    if main_base_check.is_valid_number("5G3F8F", 16) == False:
+    if not main_base_check.is_valid_number("5G3F8F", 16):
         print("Test 11: PASSED")
     else:
         print("Test 11: FAILED")
 
     # Test 12
-    if main_base_check.is_valid_number("5G3F8F", 17) == True:
+    if main_base_check.is_valid_number("5G3F8F", 17):
         print("Test 12: PASSED")
     else:
         print("Test 12: FAILED")
 
     # Test 13
-    if main_base_check.is_valid_number("abc", 10) == False:
+    if not main_base_check.is_valid_number("abc", 10):
         print("Test 13: PASSED")
     else:
         print("Test 13: FAILED")
 
     # Test 14
-    if main_base_check.is_valid_number("abc", 16) == True:
+    if main_base_check.is_valid_number("abc", 16):
         print("Test 14: PASSED")
     else:
         print("Test 14: FAILED")
 
     # Test 15
-    if main_base_check.is_valid_number("AbC", 16) == True:
+    if main_base_check.is_valid_number("AbC", 16):
         print("Test 15: PASSED")
     else:
         print("Test 15: FAILED")
 
     # Test 16
-    if main_base_check.is_valid_number("z", 36) == True:
+    if main_base_check.is_valid_number("z", 36):
         print("Test 16: PASSED")
     else:
         print("Test 16: FAILED")
