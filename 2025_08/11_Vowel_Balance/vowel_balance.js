@@ -73,8 +73,16 @@ function isBalanced(text) {
     return result;
 }
 
+// --------------------------------------------------------------------------------------
+// Test cases
 
-console.log(isBalanced("racecar"))
-console.log(isBalanced("raccar"))
-console.log(isBalanced("Lorem Ipsum"))
-console.log(isBalanced("string"))
+let test_1 = String(isBalanced("racecar"))
+let test_2 = String(isBalanced("raccar"))
+let test_3 = String(isBalanced("Lorem Ipsum"))
+let test_4 = String(isBalanced("string")) 
+
+console.log(`Test 1: \n Ergebnis: ${test_1} \n Erwartet: true \n -------------------`)
+console.log(`Test 2: \n Ergebnis: ${test_2} \n Erwartet: true \n -------------------`)
+console.log(`Test 3: \n Ergebnis: ${test_3} \n Erwartet: true \n -------------------`)
+console.log(`Test 4: \n Ergebnis: ${test_4} \n Erwartet: false \n -------------------`)
+// --------------------------------------------------------------------------------------
