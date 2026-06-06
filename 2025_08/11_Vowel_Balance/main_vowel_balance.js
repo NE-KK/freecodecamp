@@ -17,7 +17,7 @@ examples:
     7. is_balanced("123A#b!E&*456-o.U") should return True.
 */
 
-const vowelList = ["A", "a","E", "e","I", "i","O", "o","U", "u",]
+const vowelList = ["A", "a","E", "e","I", "i","O", "o","U", "u"]
 
 
 function countVowels(text) {
@@ -25,8 +25,8 @@ function countVowels(text) {
     let vowelLen = vowelList.length;
     let vowelCount = 0;
     
-    for (i=0; i < len; i++) {
-        for (j=0; j < vowelLen; j++) {
+    for (let i=0; i < len; i++) {
+        for (let j=0; j < vowelLen; j++) {
             if (text[i] === vowelList[j] ) {
                 vowelCount++;
             }
@@ -36,10 +36,6 @@ function countVowels(text) {
     return vowelCount;
 }
 
-
-function sliceText(text) {
-    console.log(text);
-}
 
 function getResult(count1, count2) {
     let result = false;
@@ -51,7 +47,7 @@ function getResult(count1, count2) {
     return result;
 }
 
-function isBalanced(text) {
+export function isBalanced(text) {
     let textLength = text.length;
     let halfTextLength = Math.floor(text.length / 2);
     
@@ -72,17 +68,3 @@ function isBalanced(text) {
 
     return result;
 }
-
-// --------------------------------------------------------------------------------------
-// Test cases
-
-let test_1 = String(isBalanced("racecar"))
-let test_2 = String(isBalanced("raccar"))
-let test_3 = String(isBalanced("Lorem Ipsum"))
-let test_4 = String(isBalanced("string")) 
-
-console.log(`Test 1: \n Ergebnis: ${test_1} \n Erwartet: true \n -------------------`)
-console.log(`Test 2: \n Ergebnis: ${test_2} \n Erwartet: true \n -------------------`)
-console.log(`Test 3: \n Ergebnis: ${test_3} \n Erwartet: true \n -------------------`)
-console.log(`Test 4: \n Ergebnis: ${test_4} \n Erwartet: false \n -------------------`)
-// --------------------------------------------------------------------------------------
