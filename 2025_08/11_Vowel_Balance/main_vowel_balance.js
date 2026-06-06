@@ -3,18 +3,6 @@ freecodecamp
 Daily Coding Challenges
 Day 1 (2025-08-11)
 Vowel Balance
-
-Given a string, determine whether the number of vowels in the first half of the string is equal to the number of vowels in the second half.
-Vowels are: a, A, e, E, i, I, o, O, u, U
-If there's an odd number of characters in the string, ignore the center character.
-examples:
-    1. is_balanced("racecar") should return True.
-    2. is_balanced("Lorem Ipsum") should return True.
-    3. is_balanced("Kitty Ipsum") should return False.
-    4. is_balanced("string") should return False.
-    5. is_balanced(" ") should return True.
-    6. is_balanced("abcdefghijklmnopqrstuvwxyz") should return False.
-    7. is_balanced("123A#b!E&*456-o.U") should return True.
 */
 
 const vowelList = ["A", "a","E", "e","I", "i","O", "o","U", "u"]
